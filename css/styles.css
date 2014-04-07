@@ -1,0 +1,234 @@
+ 
+
+/********************************************************** MIXINS */
+.accented, a.accented {
+  color: #C84;
+}
+.accented:hover {
+  color: orange;
+}
+.clear {
+  clear: both;
+  content: "";
+}
+.page {
+  display:block;
+  background:#FFF;
+  color:#000;
+  margin-top:30px;
+  padding:10px;
+  clear:both;
+}
+
+/********************************************************** RESET, GLOBALS, CUSTOMS, & Misc. */
+
+body, html {
+  overflow-x:hidden;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #222;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+::selection {
+  background: #FF9;
+  color: #6BD;
+}
+a:hover {
+  text-decoration:none;
+}
+
+a.current {
+  background:#CCC;
+}
+
+img {
+  width:100%;
+}
+
+#main {
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.sidebar {
+  float:left;
+  margin:0;
+  margin-top:30px;
+  display:inline-block;
+}
+
+#wrapper {
+  padding:20px;
+  padding-top:60px;
+  background:#FF9;
+  background:-webkit-linear-gradient(rgba(88,182,215,.5),white);
+  background:-moz-linear-gradient(rgba(88,182,215,.5),white);
+  background:-o-linear-gradient(rgba(88,182,215,.5),white);
+  background:-ms-linear-gradient(rgba(88,182,215,.5),white);
+  background:linear-gradient(rgba(88,182,215,.5),white);
+}
+
+
+/********************************************************** Header Bar */
+
+.logotext {
+  font-family: Times, Garamond, serif;
+  line-height: 1em;
+  color: #000;
+  text-align:right;
+  font-size: 28px;
+}
+
+.phone {
+  font-family: Times, Garamond, serif;
+  line-height: 1em;
+  color: #333;
+  font-weight:bold;
+  text-align:right;
+  font-size: 28px;
+}
+
+.nav {
+  display:inline-block;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.nav a {
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    transition: all 0.9s;
+    padding:10px;
+    background:#FFF;
+    display:inline-block;
+    border:1px solid gray;
+}
+.nav a.current {
+    background:#CCC;
+}
+.nav a:hover {
+    background:#000;
+    color:#FFF;
+}
+.headliner {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  padding:5px;
+  z-index:80;
+  background:rgb(88,182,215);
+  display:block;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+#top_logo {
+    display:block;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:100;
+    width:100px;
+    background:rgb(88,182,215);
+    overflow:hidden;
+    padding:5px;
+    border-bottom-left-radius: 20%;
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    transition: all 0.9s;
+}
+#top_logo img {
+    width:100%;
+    display:inline-block;
+}
+
+@media (max-width: 600px) {
+    #top_logo {
+        width:75px;
+    }
+    .headliner {
+      padding:5px;
+    }
+    .nav a {
+      padding:5px 10px;
+    }
+    .logotext, .slogan {
+      display:none;
+    }
+}
+
+@media (max-width: 450px) {
+    #top_logo {
+        width:50px;
+    }
+}
+
+/********************************************************** Home Page  */
+#appdemo { 
+  width:90%;
+  display:inline-block;
+  padding:10px;
+}
+.headline {
+  text-align:center;
+  text-transform: uppercase;
+}
+#home div {
+  display:inline-block;
+}
+
+/********************************************************** About Page  */
+
+#about img {
+  width:50%;
+  display:inline-block;
+}
+
+/********************************************************** Contact Form  */
+#contact_form {
+  width:90%;
+}
+#contact_form input {
+  padding: 5px;
+  margin-bottom:10px;
+  display:block;
+  width:100%;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+#contact_form textarea {
+  padding:5px;
+  height: 150px; 
+  width: 100%; 
+  margin-bottom:10px;
+  display:block;
+  resize: none;
+}
+#contact_form input[type=submit]:hover {
+  background:orange;
+}
+#contact_main {
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+/********************************************************** Footer  */
+#footer {
+  padding:10px;
+  clear:both;
+}
