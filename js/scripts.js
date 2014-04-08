@@ -55,6 +55,7 @@ Feel free to take a look around and send any comments my way: sqsinger [at] post
 */
 
 
+
 // Utility function: style the top menu by assigning .current to the active page.
 function update_current(linkname) {
     $(".current").removeClass("current"); // By default: no current link.
@@ -68,7 +69,7 @@ function update_current(linkname) {
 
 // The "main" function, if you will, of this page.
 function loadpage() {
-    // Hide loading icon
+    // Hide loading icon & Scroll to the top
     $("#loading-icon").slideUp();
 
     // Rename .page elements for jQuery-enabled menu function
@@ -77,7 +78,7 @@ function loadpage() {
 
     // Determine and load the current page on pageload (if applicable)
     var page = window.location.hash.substring(1);
-    update_current("#" + page);
+    update_current("." + page);
     var pgelem = $("#" + page + "_section");
     if (pgelem.length > 0) // If this page actually exists.
         pgelem.show();
@@ -95,16 +96,54 @@ function loadpage() {
         
         // Update the page content accordingly.
         target = $(this).attr("href") + "_section";
-        $(target).slideDown("slow");        
+        $(target).slideDown("slow");
+
+        // Scroll nicely toward the top
+        if ($(document).scrollTop() > 266 )
+          $("body, html").animate({ scrollTop: 266 });
     });
 
 }
 
 // This is the part that calls other functions above.
 $(window).load(function() {
+    $("body, html").animate({ scrollTop: 0 },200);
     // Create loading effect. Wait for a moment, then load the page properly.
-    $("#loading-icon").show().html('<img class="half-grayscale" src="./images/ajax_loader_orange_512.gif" />');
     $(".page").hide();
-    window.setTimeout(function() {loadpage();},1000);
-
+    loadpage();
 });
+function navbar_resize() {
+    var y = $(document).scrollTop();
+    var x = $(window).width(); // For proper responsive behavior.
+    var w = $("#banner").width();
+    if (y > 265) {
+      $(".headliner").css("position","fixed").css("top","0").css("left","auto").css("border-top-right-radius","0");
+      if(x > w)
+        $(".headliner").width(w);
+      else
+        $(".headliner").width((x-5) + "px").css("left","0");
+      $("#navlogo").css("display","inline");
+      $(".page, .sidebar").css("margin-top","55px");
+    }
+    else {
+      $(".headliner").css("position","relative").css("top","0").css("border-top-right-radius","40px");
+      $("#navlogo").hide();
+      $(".page, .sidebar").css("margin-top","5px");
+    }
+    if(x<850) 
+      $("#navlogo img").hide();
+    else 
+      $("#navlogo img").show();
+    if(x<500)
+      $("#navlogo span").hide();
+    else
+      $("#navlogo span").show();
+}
+
+// Change styling on the navbar to make it fixed if scrolled past or if window resized
+$(window).scroll(function() {
+  navbar_resize();
+});
+$(window).resize(function() {
+  navbar_resize();
+})

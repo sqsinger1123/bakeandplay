@@ -23,7 +23,6 @@
     <!-- Stylesheet links: Bootstrap(+resp), GoogleFonts, & custom CSS (made with LESS, Sass, and/or PHP) -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap-resp.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
     <!-- Metadata -->
@@ -35,24 +34,20 @@
   </head>
 
   <body>
-    
-    <?php include("pages/header.php"); ?>
-
-    <div id="wrapper">
-      <div class="container">
+    <div id="wrapper" class="container">
+      <div class="span12">
+        <?php include("pages/header.php"); ?>
         <div id="main" class="row-fluid">
           <div class="span8">
             <?php
-                  
-                  include("pages/home.php");
-                  include("pages/menu.php");
-                  include("pages/activities.php");
-                  include("pages/about.php");
-                  include("pages/contact.php");
+              include("pages/home.php");
+              include("pages/menu.php");
+              include("pages/activities.php");
+              include("pages/about.php");
+              include("pages/contact.php");
             ?>
           </div>
           <div class="span4">
-
             <?php
                 include("pages/sidebar.php");
             ?>

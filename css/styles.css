@@ -15,15 +15,14 @@
   display:block;
   background:#FFF;
   color:#000;
-  margin-top:30px;
   padding:10px;
   clear:both;
+  margin-top:5px;
 }
 
 /********************************************************** RESET, GLOBALS, CUSTOMS, & Misc. */
 
 body, html {
-  overflow-x:hidden;
 }
 
 a,
@@ -36,15 +35,15 @@ a:visited {
   transition: all 0.3s;
 }
 ::selection {
-  background: #FF9;
-  color: #6BD;
+  background: #C84;
+  color: #000;
 }
 a:hover {
   text-decoration:none;
 }
 
 a.current {
-  background:#CCC;
+  background:rgba(240,238,138,.6);
 }
 
 img {
@@ -52,6 +51,7 @@ img {
 }
 
 #main {
+  border: 5px solid rgba(88,182,215,.5);
   -webkit-transition: all 0.9s;
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
@@ -61,24 +61,39 @@ img {
 .sidebar {
   float:left;
   margin:0;
-  margin-top:30px;
+  margin-top:5px;
   display:inline-block;
 }
 
 #wrapper {
   padding:20px;
-  padding-top:60px;
-  background:#FF9;
-  background:-webkit-linear-gradient(rgba(88,182,215,.5),white);
-  background:-moz-linear-gradient(rgba(88,182,215,.5),white);
-  background:-o-linear-gradient(rgba(88,182,215,.5),white);
-  background:-ms-linear-gradient(rgba(88,182,215,.5),white);
-  background:linear-gradient(rgba(88,182,215,.5),white);
+  position:relative;
+}
+@media (max-width:1000px) {
+  #wrapper {
+    padding:5px;
+  }
+}
+@media (max-width:700px) {
+  #wrapper {
+    padding:5px;
+  }
 }
 
 
 /********************************************************** Header Bar */
 
+#banner {
+  margin-bottom:20px;
+  position:relative;
+}
+#banner span {
+  font-size:24px;
+  font-weight:bold;
+  position:absolute;
+  bottom:0px;
+  right:10px;
+}
 .logotext {
   font-family: Times, Garamond, serif;
   line-height: 1em;
@@ -118,16 +133,38 @@ img {
     background:#000;
     color:#FFF;
 }
-.headliner {
+#navlogo {
+  display:none;
+  text-align:right;
   width:100%;
-  padding:5px;
-  z-index:80;
-  background:rgb(88,182,215);
-  display:block;
+  margin-left:10px;
+}
+#navlogo img {
+  height:30px;
+  width:200px;
+  display:inline;
+  clear:none;
   -webkit-transition: all 0.9s;
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
   transition: all 0.9s;
+}
+#navlogo span {
+  font-size:16px;
+  font-weight:bold;
+  position:absolute;
+  right:10px;
+  top:5px;
+}
+.headliner {
+  padding:5px;
+  width:100%;
+  z-index:80;
+  overflow-x:scroll;
+  position:absolute;
+  background:rgb(88,182,215);
+  display:block;
+  border-top-right-radius: 40px;
 }
 
 #top_logo {
@@ -213,9 +250,6 @@ img {
   margin-bottom:10px;
   display:block;
   resize: none;
-}
-#contact_form input[type=submit]:hover {
-  background:orange;
 }
 #contact_main {
   width:90%;
