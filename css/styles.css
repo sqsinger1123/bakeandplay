@@ -58,15 +58,9 @@ img {
   transition: all 0.9s;
 }
 
-.sidebar {
-  float:left;
-  margin:0;
-  margin-top:5px;
-  display:inline-block;
-}
-
 #wrapper {
   padding:20px;
+  padding-bottom:0px;
   position:relative;
 }
 @media (max-width:1000px) {
@@ -87,12 +81,41 @@ img {
   margin-bottom:20px;
   position:relative;
 }
+#banner #logo {
+  width:300px;
+}
 #banner span {
   font-size:24px;
   font-weight:bold;
   position:absolute;
-  bottom:0px;
+  top:0px;
   right:10px;
+}
+#banner .title {
+  font-family: 'Adamina', serif;
+  font-size:84px;
+  font-weight:bold;
+  color:#58b6d7;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 
+               0 1px 0 #000, 0 -2px 0 #000, 
+               2px 2px #000, -2px -2px 0 #000, 
+               2px -2px 0 #000, -2px 2px 0 #000;
+  position:absolute;
+  right:20px;
+  bottom:60px;
+}
+#banner .subtitle {
+  font-family: 'Adamina', serif;
+  font-size:32px;
+  font-weight:bold;
+  color:#58b6d7;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 
+               0 1px 0 #000, 0 -1px 0 #000, 
+               1px 1px #000, -1px -1px 0 #000, 
+               1px -1px 0 #000, -1px 1px 0 #000;
+  position:absolute;
+  right:75px;
+  bottom:0px;
 }
 .logotext {
   font-family: Times, Garamond, serif;
@@ -160,7 +183,6 @@ img {
   padding:5px;
   width:100%;
   z-index:80;
-  overflow-x:scroll;
   position:absolute;
   background:rgb(88,182,215);
   display:block;
@@ -207,6 +229,16 @@ img {
         width:50px;
     }
 }
+
+/********************************************************** Side Bar */
+
+.sidebar {
+  float:left;
+  margin:0;
+  margin-top:5px;
+  display:inline-block;
+}
+
 
 /********************************************************** Home Page  */
 #appdemo { 

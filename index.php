@@ -23,6 +23,7 @@
     <!-- Stylesheet links: Bootstrap(+resp), GoogleFonts, & custom CSS (made with LESS, Sass, and/or PHP) -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Adamina' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
     <!-- Metadata -->

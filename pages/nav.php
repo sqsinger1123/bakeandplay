@@ -19,6 +19,6 @@ foreach($nav as $key => $value) {
 ?>
 	<div id="navlogo">
 		<img src="img/logo_and_text_scaled.png" alt="Bake and Play" />
-		<span id="phone">484-461-7529<br/>3721 Garrett Rd Drexel Hill, PA 19026</span>
+		<span id="phone">3721 Garrett Rd Drexel Hill, PA 19026<br/>484-461-7529</span>
 	</div>
 </div> <!-- end div menu -->

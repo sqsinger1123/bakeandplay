@@ -108,6 +108,7 @@ function loadpage() {
 // This is the part that calls other functions above.
 $(window).load(function() {
     $("body, html").animate({ scrollTop: 0 },200);
+    navbar_resize();
     // Create loading effect. Wait for a moment, then load the page properly.
     $(".page").hide();
     loadpage();

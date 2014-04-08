@@ -1,6 +1,8 @@
 	<div id="banner">
-		<img id="logo" src="img/logo_and_text.png" />
-		<span class="phone">484-461-7529<br/>3721 Garrett Rd Drexel Hill, PA 19026</span>
+		<span class="phone">3721 Garrett Rd Drexel Hill, PA 19026<br/>484-461-7529</span>
+		<img id="logo" src="img/logo.png" />
+		<h2 class="title">Bake and Play</h2>
+		<h3 class="subtitle">Family Fun and Bakery Treats</h3>
 	</div>
 
 	<div id="top_logo" title="Bake and Play">
