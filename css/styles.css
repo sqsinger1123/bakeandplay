@@ -35,7 +35,7 @@ a:visited {
   transition: all 0.3s;
 }
 ::selection {
-  background: #C84;
+  background:rgba(240,238,138,.5);
   color: #000;
 }
 a:hover {
@@ -238,6 +238,22 @@ img {
   margin-top:5px;
   display:inline-block;
 }
+.sidebar iframe {
+  width:300px;
+  border:none; 
+  background:#FFF;
+  overflow:hidden;
+}
+#facebookfeed { 
+  height:590px;
+}
+#googlemap {
+  height:300px;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
 
 
 /********************************************************** Home Page  */
@@ -253,6 +269,11 @@ img {
 #home div {
   display:inline-block;
 }
+
+/********************************************************** Menu Page  */
+
+/********************************************************** Activities Page  */
+
 
 /********************************************************** About Page  */
 
