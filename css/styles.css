@@ -270,6 +270,20 @@ img {
   display:inline-block;
 }
 
+/* ----------------------------------------(based on home section)----- NOSCRIPT & home_top */
+#home_top {
+  line-height: 130%;
+  padding-bottom:100px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#noscript_section, #home_top {
+  padding: 5%;
+  border-bottom:5px solid #f0ee8a;
+}
+
 /********************************************************** Menu Page  */
 
 /********************************************************** Activities Page  */
