@@ -20,6 +20,13 @@
   margin-top:5px;
 }
 
+.formating, .formating td {
+  border:0;
+  padding:0px 5px;
+  margin:0px 15px;
+}
+
+
 /********************************************************** RESET, GLOBALS, CUSTOMS, & Misc. */
 
 body, html {
@@ -50,6 +57,12 @@ img {
   width:100%;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  color:#178;
+}
+.underlined {
+  border-bottom: 4px solid #F0EE8A;
+}
 #main {
   border: 5px solid rgba(88,182,215,.5);
   -webkit-transition: all 0.9s;
@@ -244,6 +257,13 @@ img {
   background:#FFF;
   overflow:hidden;
 }
+#hours {
+  padding:10px;
+  margin-bottom:10px;
+}
+#hours tr td:first-child {
+  text-align:right;
+}
 #facebookfeed { 
   height:590px;
 }
@@ -285,9 +305,20 @@ img {
 }
 
 /********************************************************** Menu Page  */
+#price_table td {
+  padding: 0px 20px;
+}
+
+.seasonal h3 {
+  font-size:1em;
+  line-height: 100%;
+  margin:10px 0px 0px;
+}
 
 /********************************************************** Activities Page  */
-
+.baking_class, .seasonal {
+  margin-left:50px;
+}
 
 /********************************************************** About Page  */
 
@@ -309,6 +340,7 @@ img {
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
   transition: all 0.9s;
+  border:1px solid gray;
 }
 #contact_form textarea {
   padding:5px;
@@ -317,6 +349,7 @@ img {
   margin-bottom:10px;
   display:block;
   resize: none;
+  border:2px solid gray;
 }
 #contact_main {
   width:90%;
