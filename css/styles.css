@@ -277,6 +277,18 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /********************************************************** Home Page  */
+.album { 
+  list-style: none;
+}
+.album li { 
+  float:left; height:150px; margin-bottom:10px; text-align:center;
+}
+.album a { 
+  display:block; width:150px; padding:5px; margin:5px; border: 4px solid #444;
+}
+.album a:hover { 
+  border: 4px solid #44d;
+}
 #appdemo { 
   width:90%;
   display:inline-block;
@@ -289,6 +301,7 @@ h1,h2,h3,h4,h5,h6 {
 #home div {
   display:inline-block;
 }
+
 
 /* ----------------------------------------(based on home section)----- NOSCRIPT & home_top */
 #home_top {

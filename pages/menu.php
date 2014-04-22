@@ -29,8 +29,8 @@
 			</table>
 
 			<h2 class="underlined">Cupcakes</h2>
-			<h3>Daily Year Round</h3>
 			<div id="year-round" class="seasonal">
+				<h4>Daily Year Round</h4>
 				<h3>Mysterious Dr. Play</h3> 
 			    Bake and Play's signature cupcake: Chocolate cake with Nutella buttercream 
 			    frosting topped with mini chocolate chips
@@ -45,9 +45,10 @@
 			    <h3>Twister</h3>
 			    Yellow buttermilk cake with chocolate frosting or Chocolate cake with Vanilla frosting
 			</div>
-			<h3>Seasonal Specials</h3>
-			<h3>Winter: Dec-Feb</h3>
+
 			<div id="winter" class="seasonal">
+				<h4>Seasonal Specials</h4>
+				<h4 class="underlined">Winter: Dec-Feb</h4>
 			    <h3>Snowball</h3>
 			    Coconut cake with vanilla and coconut buttercream topped with flaked coconut
 			    
@@ -66,8 +67,8 @@
 			    <h3>Strawberries and Chocolate:</h3>
 			    Chocolate cake frosted with Strawberry buttercream, topped with a chocolate covered strawberry
 			</div>    
-			<h3>Spring: Mar-May</h3>
 			<div id="spring" class="seasonal">
+			    <h4 class="underlined">Spring: Mar-May</h4>
 			    <h3>Lucky Irish</h3>
 			    Brown Sugar pound cake with Irish Cream frosting
 			    
@@ -87,8 +88,9 @@
 			    A vanilla cake with fresh strawberries baked in, frosted with a strawberry preserved infused buttercream.
 			    
 			</div>
-			<h3>Summer: Jun-Aug</h3>
+			
 			<div id="summer" class="seasonal">    
+			    <h4 class="underlined">Summer: Jun-Aug</h4>
 			    <h3>Blueberries and Cream</h3>
 			    Vanilla cake with whole blueberries baked in topped with a blueberry buttercream
 			    
@@ -108,8 +110,9 @@
 			    Orange cake with vanilla orange buttercream.
 			    
 			</div> <!-- end div summer -->
-			<h3>Fall: Sep-Nov</h3>
+			
 			<div id="fall" class="seasonal">
+			    <h4 class="underlined">Fall: Sep-Nov</h4>
 			    <h3>PB&amp;J</h3>
 			    Peanut butter cake filled with peanut butter cream topped with strawberry or raspberry jam flavored frosting
 			    

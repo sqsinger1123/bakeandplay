@@ -148,3 +148,4 @@ $(window).scroll(function() {
 $(window).resize(function() {
   navbar_resize();
 })
+
