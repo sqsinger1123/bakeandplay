@@ -5,11 +5,11 @@
         	<table class="formating">
 	        	<tr>
 	        		<td>Tue - Thu:</td>
-	        		<td>12:00n - 6:00pm</td>
+	        		<td>12:00pm - 6:00pm</td>
 	        	</tr>
 				<tr>
 					<td>Fri:</td>
-					<td>12:00n - 8:00pm</td>
+					<td>12:00pm - 8:00pm</td>
 				</tr>
 				<tr>
 					<td>Sat:</td><td>10:00am - 8:00pm</td>

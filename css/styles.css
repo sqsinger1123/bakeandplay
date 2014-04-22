@@ -29,7 +29,12 @@
 
 /********************************************************** RESET, GLOBALS, CUSTOMS, & Misc. */
 
-body, html {
+body, html, * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
@@ -281,13 +286,23 @@ h1,h2,h3,h4,h5,h6 {
   list-style: none;
 }
 .album li { 
-  float:left; height:150px; margin-bottom:10px; text-align:center;
+  max-height:150px; 
+  max-width:150px; 
+  text-align:center;
+  margin:5px;
 }
-.album a { 
-  display:block; width:150px; padding:5px; margin:5px; border: 4px solid #444;
+.album a, .fbThumb, .imageLink, .FB-image { 
+  display:inline-block;
 }
 .album a:hover { 
-  border: 4px solid #44d;
+  opacity:.8;
+}
+
+#FBalbum {
+  width:100%;
+  padding:20px 5px;
+  word-wrap:break-word;
+  border:1px solid gray;
 }
 #appdemo { 
   width:90%;
@@ -312,7 +327,7 @@ h1,h2,h3,h4,h5,h6 {
   -o-transition: all 0.7s;
   transition: all 0.7s;
 }
-#noscript_section, #home_top {
+#noscript_section, #home_main, #home_desc {
   padding: 5%;
   border-bottom:5px solid #f0ee8a;
 }
