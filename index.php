@@ -38,6 +38,9 @@
     <div id="wrapper" class="container">
       <div class="span12">
         <?php include("pages/header.php"); ?>
+        <div id="top" class="headliner">
+          <?php include("pages/nav.php"); ?> 
+        </div>
         <div id="main" class="row-fluid">
           <div class="span8">
             <?php

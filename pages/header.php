@@ -10,9 +10,5 @@
         <img src="img/logo.png" alt="Bake and Play Logo" />
       </a>
     </div>
-	
-	<div id="top" class="headliner">
-		<?php include("nav.php"); ?> 
-	</div>
 
 	
