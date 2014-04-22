@@ -5,14 +5,14 @@
         	<table class="formating">
 	        	<tr>
 	        		<td>Tue - Thu:</td>
-	        		<td>12:00 - 18:00</td>
+	        		<td>12:00n - 6:00pm</td>
 	        	</tr>
 				<tr>
 					<td>Fri:</td>
-					<td>12:00 - 08:00</td>
+					<td>12:00n - 8:00pm</td>
 				</tr>
 				<tr>
-					<td>Sat:</td><td>10:00 - 08:00</td>
+					<td>Sat:</td><td>10:00am - 8:00pm</td>
 				</tr>
 			</table>
 		</div>

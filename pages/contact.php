@@ -12,6 +12,6 @@
               </form>
             </div>
           </div>
-          <script type="text/javascript" src="/js/ajax_email.js"></script>
+          <script type="text/javascript" src="js/ajax_email.js"></script>
         </div> <!-- end div contact -->
 

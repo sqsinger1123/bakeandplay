@@ -7,6 +7,9 @@
 		        </div>
 	        </div> 
 	        <div id="home_lower" class="container">
+	        	<!-- Facebook album photos -->
+	        	<div id="photos"></div>
+				<iframe src="http://embedsocial.com/facebook_album/album_photos/181298895364133" width="900" height="1450" frameborder="0" scrolling="no" marginheight="0"  marginwidth="0"></iframe>
 			</div>
 		</div> <!-- end div home -->
 	
